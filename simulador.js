@@ -16,4 +16,9 @@ function calcular() {
 
     let valorInteres = calcularInteresSimple(monto, tasa, plazoAnios);
     texto("spnInteresPagar", valorInteres)
+    
+    // calcular valor total a pagar
+    let totalPagar= calcularTotalPagar(monto,valorInteres);
+    texto("spnTotalPrestamo",totalPagar);
+
 }
