@@ -7,3 +7,13 @@ function calcularDisponible(ingresos, egresos) {
     }
     return disponible;
 }
+function capacidadDePago(montoDisponible){
+    let capacidad;
+    capacidad=montoDisponible/2;
+    return capacidad;
+}
+
+function texto (id,vari){
+    let texto1 = document.getElementById(id);
+    texto1.innerText= "USD " + vari.toFixed(2);    
+}
