@@ -1,0 +1,7 @@
+<promt1> <Actúa como un diseñador gráfico, 
+mejora la visualización de este simulador de crédito sigue el color y el logo de la cooperativa de la imagen nada más, 
+haz que mi simulador se vea más elegante y profesional, añade lo que creas conveniente para que se vea mejor No cambies los id
+crea el html y el css>
+<promt2> < hazlo responsive dejame agregar el logo en la parte superior izquierda con una imagen >
+<promt3> < déjame colocar dos logos, uno en la parte superior izquierda y el otro en la derecha >
+<promt4> <hazlo estilo app bancaria real>

@@ -1,70 +1,208 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 400px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
-p {
-    margin-top: 10px;
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
 }
 
-span {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.buttons {
-    margin-top: 20px;
+/* HEADER */
+.header {
+    background: #a32020;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* LOGOS */
+.logo-left img,
+.logo-right img {
+    height: 45px;
+}
+
+/* TITULO CENTRADO */
+.titulo-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    min-height: 90vh;
+}
+
+/* TEXTO IZQUIERDO */
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* PANEL DERECHO */
+.panel {
+    width: 380px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* TITULO PANEL */
+.panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a32020;
+}
+
+/* GRUPOS */
+.grupo {
+    margin-bottom: 15px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* RESULTADOS */
+.resultado-box {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.resultado-box p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* ESTADO */
+.estado {
+    background: #fff3f3;
+    padding: 10px;
+    border-left: 4px solid #a32020;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* BOTONES */
+.buttons {
+    display: flex;
+    gap: 10px;
 }
 
 button {
-    width: 48%;
-    padding: 10px;
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* BOTON PRINCIPAL */
+#btnCalcularCredito {
+    background: linear-gradient(135deg, #a32020, #7a1818);
+    color: white;
+}
+
+/* BOTON SECUNDARIO */
+#btnReiniciar {
+    background: #e0e0e0;
+}
+
+/* HOVER */
 button:hover {
-    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .panel {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .logo-left img,
+    .logo-right img {
+        height: 35px;
+    }
+}
+/* IMAGEN HERO */
+.hero-text img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* CENTRAR EN RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text img {
+        max-width: 300px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+    .hero-text img {
+        max-width: 250px;
+    }
 }
