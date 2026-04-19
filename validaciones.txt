@@ -1,0 +1,6 @@
+<promt1> <ayudame con agregar todas las validaciones que consideres necesarias para este formulario, 
+como tipos de datos, montos máximos y mínimos, 
+campos obligatorios. implementa que estas validaciones 
+se ejecutarán una vez que presione el botón Calcular y aparecerán los errores debajo de cada campo validado.>
+<promt2> <agrega en letra pequeña los limites min y max en los input, 
+además agrega un indicador del valor del aporte de 100  dólares a SOLCA>

@@ -48,6 +48,18 @@ function aprobarCredito(capacidadPago, cuotaMensual) {
     }
 }
 
+function mostrarError(inputId, errorId, mensaje) {
+    document.getElementById(inputId).classList.add("error-input");
+    document.getElementById(errorId).innerText = mensaje;
+}
+
+function limpiarErrores() {
+    let errores = document.querySelectorAll(".error");
+    errores.forEach(e => e.innerText = "");
+
+    let inputs = document.querySelectorAll("input");
+    inputs.forEach(i => i.classList.remove("error-input"));
+}
 
 
 

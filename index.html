@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="simulador.js"></script>
     <script src="funciones.js"></script>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -42,9 +44,14 @@
             <div class="grupo">
                 <label>Ingresos</label>
                 <input type="text" id="txtIngresos">
+                <small class="hint">Mín: $100 - Máx: $50,000</small>
+                <small class="error" id="errIngresos"></small>
 
                 <label>Egresos</label>
                 <input type="text" id="txtEgresos">
+                <small class="hint">No puede superar los ingresos</small>
+                <small class="error" id="errEgresos"></small>
+
             </div>
 
             <div class="resultado-box">
@@ -56,16 +63,26 @@
             <div class="grupo">
                 <label>Monto</label>
                 <input type="text" id="txtMonto">
+                <small class="hint">Mín: $500 - Máx: $100,000</small>
+                <small class="error" id="errMonto"></small>
 
                 <label>Plazo (años)</label>
                 <input type="text" id="txtPlazo">
+                <small class="hint">Entre 1 y 30 años</small>
+                <small class="error" id="errPlazo"></small>
 
                 <label>Tasa (%)</label>
                 <input type="text" id="txtTasaInteres">
+                <small class="hint">Entre 1% y 25%</small>
+                <small class="error" id="errTasa"></small>
             </div>
 
             <div class="resultado-box">
                 <p>Interés <span id="spnInteresPagar"></span></p>
+                <div class="aporte">
+                    <p>Aporte solidario a SOLCA: <span id="spnAporte">USD 100.00</span></p>
+                    <small>Este valor es fijo y se suma al total del crédito.</small>
+                </div>
                 <p>Total <span id="spnTotalPrestamo"></span></p>
                 <p>Cuota <span id="spnCuotaMensual"></span></p>
             </div>
@@ -83,4 +100,5 @@
     </section>
 
 </body>
+
 </html>

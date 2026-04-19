@@ -206,3 +206,37 @@ button:hover {
         max-width: 250px;
     }
 }
+.error {
+    color: #ff4d4d;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input.error-input {
+    border: 2px solid #ff4d4d;
+}
+.hint {
+    color: #aaa;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 5px;
+}
+.aporte {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #00c853;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.aporte p {
+    margin: 0;
+    font-weight: bold;
+    color: #00e676;
+}
+
+.aporte small {
+    color: #bbb;
+    font-size: 11px;
+}
