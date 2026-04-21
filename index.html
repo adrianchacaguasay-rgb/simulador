@@ -47,14 +47,26 @@
                 <small class="hint">Mín: $100 - Máx: $50,000</small>
                 <small class="error" id="errIngresos"></small>
 
-                <label>Egresos</label>
-                <input type="text" id="txtEgresos">
-                <small class="hint">No puede superar los ingresos</small>
-                <small class="error" id="errEgresos"></small>
+                <label>Arriendo</label>
+                <input type="text" id="txtArriendo">
+                <small class="hint">Gasto mensual de vivienda</small>
+                <small class="error" id="errArriendo"></small>
+
+                <label>Alimentación</label>
+                <input type="text" id="txtAlimentacion">
+                <small class="hint">Gasto mensual en comida</small>
+                <small class="error" id="errAlimentacion"></small>
+
+                <label>Varios</label>
+                <input type="text" id="txtVarios">
+                <small class="hint">Otros gastos</small>
+                <small class="error" id="errVarios"></small>
+
 
             </div>
 
             <div class="resultado-box">
+                <p>Total Egresos <span id="spnEgresos"></span></p>
                 <p>Disponible <span id="spnDisponible"></span></p>
                 <p>Capacidad <span id="spnCapacidadPago"></span></p>
             </div>
